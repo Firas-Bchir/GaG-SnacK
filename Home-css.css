@@ -1,0 +1,184 @@
+body{
+	margin: 0;
+    background-image: url(https://img.freepik.com/free-vector/abstract-technology-particle-background_52683-25766.jpg?size=626&ext=jpg);
+    /* background-image: url(https://media1.giphy.com/media/26tn33aiTi1jkl6H6/200.gif); */
+    position: center;
+  
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+
+}
+li {
+	float:  left;
+}
+ li a {
+ 	display: block;
+ 	color: white;
+ 	text-align: center;
+ 	padding: 14px 18px;
+ 	text-decoration: none;
+ }
+ li a:hover {
+ 	background-color: darkgray;
+ }
+ .active {
+ 	background-color: gray;
+ }
+ /*-------------------NAV BAR--------------------- */
+.profil-1 {
+    padding: 50px;
+    background-color: #3d3d3d;
+    width: 100%;
+    height: 200px;
+    /* background-image: url(file:///C:/Users/utamk/Desktop/Gag%20Snack/Logo.png); */
+}
+canvas {
+    height: 127%;
+    width: 17%;
+     border-radius: 50%;
+   /* border-bottom-right-radius: 50%; */
+    background-color: lightgray;
+    margin: -42px;
+}
+/*canvas:hover {
+	filter: blur(10px);
+}*/
+/*-----------First DIV------------------------------------------------*/
+#posts {
+    height: 804px;
+    width: 60%;
+    margin: 70px 60px 4px 60px;
+    padding: 7px;
+    background-color: ;
+    text-align: center;
+    color: antiquewhite;
+    border: solid 1px;
+    border-radius: 23px;
+    background-color: #000000b8;
+    font-family: cursive;
+}
+#text-holder {
+    background-color: #8b8989;
+    height: 80%;
+    width: 100%;
+    /* margin-top: 50%; */
+    padding: 0px;
+    border-radius: 20px;
+}
+.article-section {
+    background-color: #5c267480;
+    /*height: 146px;*/
+    width: 60%;
+    margin: 112px 64px 48px 60px;
+    padding: 10px;
+    border-radius: 24px;
+}
+/*.text {
+    background-color: #3d3d3d99;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+    position: absolute;
+}*/
+.input  {
+    background-color: #b6b6b6;
+    width: 56%;
+    padding: 17px 20px;
+    box-sizing: border-box;
+    margin-top: 80px;
+    border-radius: 7px;
+}
+
+#btn-submit {
+    background-color: gray;
+    
+
+}
+.test {
+    background-color: white;
+    height: 20px;
+    width: 60px;
+}
+.posts-container {
+    height: 800px;
+    width: 100%;
+    background-color: #00000085;
+}
+#img-holder {
+    margin: 0px;
+    height: 70%;
+    background-color: #34342f5c;
+    width: 100%;
+    border-radius: 20px;
+    padding: 0px;
+}
+img {
+    margin-top: 21px;
+    border-radius: 35px;
+    height: 90%;
+    width: 90%;
+}
+p {
+    padding: 20px;
+    border: solid 1px;
+    margin: 26px;
+    border-radius: 19px;
+}
+.comment {
+    height: 3%;
+    padding: 2%;
+    /* margin: 0%; */
+    width: 76%;
+    background-color: white;
+    border: none;
+    border-radius: 18px;
+    margin-top: 1%;
+}
+.commnt-section {
+    padding: 3px;
+    height: 45%;
+    width: 61%;
+    background: #8d328da6;
+    border-radius: 12px;
+    margin-left: 4%;
+}
+.profile {
+    float: right;
+    margin-left: 1062px;
+}
+/*button {
+    background-color: darkgray;
+    border: unset;
+    color: #4c4d4d;
+    padding: 20px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}*/
+#sub-btn {
+    background-color: gray;
+    height: 5%;
+    width: 14%;
+}
+#parg {
+    padding: 15px;
+    border: solid 1px;
+    background-color: #0205027d;
+    border-radius: 10px;
+    margin: 16px;
+    border-radius: 10px;
+}
+#logo {
+    margin-left: 1007px;
+    height: auto;
+    width: auto;
+}

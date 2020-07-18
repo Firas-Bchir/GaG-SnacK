@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script src="main.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="signup.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<form>
+  <div class="container">
+    <h1>Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="user"><b>User</b></label>
+    <input type="text" placeholder="Enter userName" name="user" id="userName" required>
+
+    <label for="emai"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="emai" id="email" required>
+
+     <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" id="passWord" required>
+
+         <label for="password"><b>RE -enter Password</b></label>
+    <input type="password" placeholder="Enter Password again" name="password" id="passWord1" required>
+
+
+
+     <label for="age"><b>Age</b></label>
+    <input type="text" placeholder="Enter your age" name="age" id="age" required>
+
+    
+
+
+    <button type="submit" class="registerbtn" onclick="signUp()">Sign Up</button>
+  </div>
+
+</form>
+
+</body>
+</html>

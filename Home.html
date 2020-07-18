@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="Home-css.css">
+	<script src="main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<title>GaG Snack</title>
+</head>
+<body>
+    <form>
+	<script>
+
+		  var postItems = [];     
+        $(document).ready(function(){
+        	var localarray = JSON.parse(window.localStorage.getItem("postItems"));
+            for (var i = 0 ; i < localarray.length ; i++){
+            	if(JSON.parse(window.localStorage.getItem("postItems")))
+        var titles = localarray[i]["title"];
+        var descriptions =  localarray[i]["description"];
+        var imgurls =  localarray[i]["userimage"];
+         $('.posts-container').append('<div id="posts"> <h3>'+titles+'</h3> <p>'+descriptions+'</p><div id="image-holder"><img src="'+imgurls+'"></div><input class="comment" type="input" name="commnt" placeholder="Say something"><button id="sub-btn">Post</button></div><div id="commnt-section" ></div>');
+     
+      };
+        $('#btn-submit').click(function() {
+        var title = $("#title").val();
+        var description = $("#description").val();
+        var userimage = $("#img-url").val();
+        var obj = {}
+        obj["title"] = title;
+        obj["description"] = description;
+        obj["userimage"] = userimage; 
+        postItems.push(obj);
+        window.localStorage.setItem("postItems",JSON.stringify(postItems));
+        var localarray = JSON.parse(window.localStorage.getItem("postItems"));
+        for (var i = 0 ; i < localarray.length ; i++){
+        var titles = localarray[i]["title"];
+        var descriptions =  localarray[i]["description"];
+        var imgurls =  localarray[i]["userimage"];
+         $('.posts-container').append('<div id="posts"> <h3>'+titles+'</h3> <p>'+descriptions+'</p><div id="image-holder"><img src="'+imgurls+'"></div><input class="comment" type="input" name="commnt" placeholder="Say something"><button id="sub-btn">Post</button></div><div class="commnt-section"></div>');
+     
+      };
+     
+     
+        $('#sub-btn').on('click',function(){
+            var cmmnt = $('#comment').val();
+        $('.commnt-section').append('<h3>'+cmmnt+'</h3>');
+        
+   });
+
+        
+    }); 
+
+    
+    
+});
+
+       $(document).ready(function(){
+        $('#signup').click(function(){
+            location.replace('file:///C:/Users/utamk/Desktop/Gag%20Snack/signup.html');
+        });
+
+    }); 
+               $(document).ready(function(){
+        $('#login').click(function(){
+            location.replace('file:///C:/Users/utamk/Desktop/Gag%20Snack/Login.html');
+        });
+
+    });
+
+    
+  	</script>
+    </form>
+
+
+<ul>
+	<li><a class="active">Home</a></li>
+	<li><a href="underconstruction.html">Feed</a></li>
+	<li><a href="underconstruction.html">Chat</a></li>
+	<li><a href="underconstruction.html">Contact Us</a></li>
+
+		<li style="float:right" id="signup" ><a href="signup.html" class="profile">Sign up</a></li>
+	    <li ><a  id="login" href="Login.html">Log in</a></li>
+	
+</ul>
+
+
+<div class="profil-1">
+    <h3 style="margin: -2.4%;">User Name</h3>
+   <a href="file:///C:/Users/utamk/Desktop/Gag%20Snack/Home.html" >
+    <img  src="Logo.png" id="logo">
+</a>
+
+
+    
+	<canvas id="canvas-img"></canvas>
+</div>
+
+
+
+<div class="article-section">
+	<h3 class="text">Post an Article</h3>
+	<input id="title" type="input" name="title">
+	<input id="description" type="input" name="description">
+	<input id="img-url" type="link" name="img-url">
+
+	<button id="btn-submit">Submit</button>
+</div>
+
+
+
+
+<!-- ----------------------------------------------------- -->
+<div class="posts-container">
+	<div class="posts"> 
+	<h3></h3>
+	
+
+	<!-- <div class="img-holder">
+		<img src="">
+	</div>
+    <input id="comment" class="commnt" type="input" name="commnt" placeholder="Say something">
+  
+   
+</div> -->
+  <div class="commnt-section">
+
+    </div> 
+   
+</div>
+
+<!-- 
+ <div class="test"><h3>test</h3></div> -->
+</body>
+</html>

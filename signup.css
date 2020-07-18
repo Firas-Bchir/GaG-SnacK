@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightgray;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+    background-color: #6428b9cc;
+    /*margin: 602px;*/
+      position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: gray;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+#testimg {
+
+
+
+}
+
+
+/*
+@media (min-width:601px){.container{width:8.33333%}.registerbtn{width:16.66666%}.signin{width:24.99999%}body{width:33.33333%}
+@media (max-width:768px){.container{width:500px}.registerbtn{padding-top:50px}}
+@media (min-width:993px){.container{width:900px}.registerbtn{display:none}.signin{display:block!important}}
+@media (max-width:992px) and (min-width:601px){.registerbtn{display:none}}
+@media (max-width:992px){.container{display:none}.registerbtnn{margin-left:0!important;margin-right:0!important}.signin{max-width:100%}}*/
